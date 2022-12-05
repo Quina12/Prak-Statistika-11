@@ -1,0 +1,5 @@
+df_quina = read.delim("clipboard")
+View(df_quina)
+head(df_quina)
+model <- aov(korosi..y.~metode..x., data = df_quina)
+summary(model)
